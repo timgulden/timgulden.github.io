@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WatchBeat Support</title>
+  <meta name="description" content="Help and contact for WatchBeat, the iPhone app that measures how a mechanical watch is running.">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/watchbeat/icon.png">
+  <link rel="apple-touch-icon" href="/watchbeat/icon.png">
+</head>
+<body>
+<main>
+  <header class="app">
+    <img src="/watchbeat/icon.png" alt="WatchBeat app icon">
+    <div>
+      <h1>WatchBeat</h1>
+      <p>Support</p>
+    </div>
+  </header>
+
+  <nav class="pages">
+    <a href="#reading">Taking a reading</a>
+    <a href="#results">Results</a>
+    <a href="#study">Position Study</a>
+    <a href="#trouble">Troubleshooting</a>
+    <a href="#contact">Contact</a>
+    <a href="/watchbeat/privacy/">Privacy</a>
+  </nav>
+
+  <p class="lede">WatchBeat listens to a mechanical watch through your iPhone's microphone and tells you how it's running: how many seconds a day it gains or loses, its beat error, and its balance amplitude. All of the analysis happens on your iPhone.</p>
+
+  <h2>What you need</h2>
+  <ul>
+    <li>A ticking <strong>mechanical</strong> watch (hand-wound or automatic). Quartz (battery) watches and smartwatches can't be measured; WatchBeat will tell you if it hears a quartz watch.</li>
+    <li>An iPhone running iOS 26 or later.</li>
+    <li>A reasonably quiet room.</li>
+  </ul>
+
+  <h2 id="reading">Taking a reading</h2>
+  <ol>
+    <li>Press the bottom edge of your iPhone, where the microphone is, against the watch crystal. The watch can stay on your wrist.</li>
+    <li>Tap <strong>Listen</strong> and hold steady. The screen shows the sound it's picking up while it works. Most readings finish in about 15 seconds; a quiet watch can take up to a minute.</li>
+    <li>Read your result.</li>
+  </ol>
+  <p class="note">If the signal is weak, try pressing the phone against the caseback instead of the crystal.</p>
+
+  <h2 id="results">Understanding the result</h2>
+  <dl>
+    <dt>Rate</dt>
+    <dd>How many seconds per day the watch gains (+) or loses (−). WatchBeat also shows the beat rate it identified, in beats per hour (bph) and Hz.</dd>
+    <dt>Beat error</dt>
+    <dd>The difference in timing between the "tick" and the "tock", in milliseconds. Under 1 ms is shown as good, 1–3 ms as fair, and over 3 ms as high.</dd>
+    <dt>Amplitude</dt>
+    <dd>How far the balance wheel swings, in degrees. The calculation depends on your movement's lift angle: enter it in the Lift Angle field (the default is 50°; check your movement's specifications). Amplitude shows "---" when it can't be measured reliably.</dd>
+    <dt>Timegraph</dt>
+    <dd>Each dot is one tick (blue) or tock (cyan) from the analyzed recording. A tight, straight trace means steady ticking; two separate lines indicate beat error.</dd>
+    <dt>Measurement quality</dt>
+    <dd>How cleanly the ticks came through. A low score means the reading is less certain.</dd>
+  </dl>
+
+  <h2 id="study">Position Study</h2>
+  <p>A watch runs a little differently depending on how it's held, so watchmakers check it in several positions. Tap <strong>Position Study</strong> for a guided measurement in the five standard positions: Dial Up, Dial Down, 6 Up, 3 Up and 9 Up.</p>
+  <p>Hold the watch crystal against the phone's bottom edge with the crown pointing right, and keep that grip throughout. The app shows how to hold the phone for each position and starts each reading by itself once you're holding it steady. The summary shows the average rate, the spread between positions, and each position's rate, beat error and amplitude.</p>
+
+  <h2 id="trouble">When a reading doesn't work</h2>
+  <h3>Couldn't find a clear signal</h3>
+  <ul>
+    <li>Move to a quieter room.</li>
+    <li>Hold the phone firmly against the watch.</li>
+    <li>Try the caseback instead of the crystal.</li>
+    <li>Remove a thick phone case.</li>
+  </ul>
+  <h3>Reading wasn't conclusive</h3>
+  <ul>
+    <li>Try again; a fresh recording often reads cleanly.</li>
+    <li>If it keeps happening, try a different watch position.</li>
+  </ul>
+  <h3>Unexpected rate</h3>
+  <ul>
+    <li>If you know your watch's beat rate, check whether the measured value matches.</li>
+    <li>Try a different watch position, and press the phone firmly against the watch.</li>
+  </ul>
+  <h3>Watch needs service</h3>
+  <p>The watch ran far outside the normal range for a healthy mechanical watch, which usually means it needs cleaning, lubrication or regulation. If you saw this in a noisy room, try again somewhere quieter first.</p>
+  <h3>Quartz detected</h3>
+  <p>WatchBeat measures mechanical watches only.</p>
+  <h3>Microphone unavailable</h3>
+  <ul>
+    <li>End any phone or video call.</li>
+    <li>Quit other apps that are recording (Voice Memos, for example).</li>
+    <li>Check that WatchBeat is allowed in Settings → Privacy &amp; Security → Microphone.</li>
+  </ul>
+
+  <h2 id="debug">Sending a debug report</h2>
+  <p>If a reading looks wrong, tap <strong>Send Debug</strong> on the result or error screen. The report contains the recording from that measurement (which can pick up other sounds in the room), the measurement details, and your app and iOS versions. You can add the watch's name and a note. Nothing goes out until you send it yourself from Mail or the share sheet. See the <a href="/watchbeat/privacy/">privacy policy</a>.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Questions, problems or suggestions: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#103;&#117;&#108;&#100;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;?subject=WatchBeat%20support">&#116;&#103;&#117;&#108;&#100;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+
+  <footer>
+    WatchBeat is made by Tim Gulden. · <a href="/watchbeat/privacy/">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
